@@ -1,0 +1,21 @@
+server:
+  port: 8888
+
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}
+  client:
+    register-with-eureka: true #注册到Eureka的注册中⼼,客户端注册
+    fetch-registry: true #获取注册实例列表
+    service-url:
+      defaultZone: http://r1:7001/eureka/,http://r2:7002/eureka/ #配置注册中⼼地址
+#       defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/ #配置注册中⼼地址
+
+spring:
+  application:
+    name: consumer-server-8888
+
+info:
+  remark: 快递存储服务
+  author: qinban

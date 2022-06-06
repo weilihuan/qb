@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.expressage.dao.OrderDAO">
+
+    <insert id="saveOrder">
+        insert into exp_order(order_id,
+                              creater_user_id,
+                              order_status,
+                              creater_time)
+        values (#{orderId,jdbcType=VARCHAR},
+                #{createrUserId,jdbcType=VARCHAR},
+                #{orderStatus,jdbcType=VARCHAR},
+                #{createrTime,jdbcType=DATE})
+    </insert>
+
+
+</mapper>

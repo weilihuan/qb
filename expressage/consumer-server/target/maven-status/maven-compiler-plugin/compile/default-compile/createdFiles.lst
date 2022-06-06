@@ -1,0 +1,4 @@
+com\expressage\controller\ComsumerController.class
+com\expressage\controller\ConsumerFeignController.class
+com\expressage\config\Config.class
+com\expressage\ConsumerApp.class

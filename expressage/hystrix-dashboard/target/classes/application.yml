@@ -1,0 +1,17 @@
+server:
+  port: 8101
+
+spring:
+  application:
+    name: hystrix-dashboard
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}
+  client:
+    register-with-eureka: true #注册到Eureka的注册中⼼,客户端注册
+    fetch-registry: true #获取注册实例列表
+    service-url:
+      defaultZone: http://r1:7001/eureka/,http://r2:7002/eureka/ #配置注册中⼼地址
+info:
+  remark: 监控服务

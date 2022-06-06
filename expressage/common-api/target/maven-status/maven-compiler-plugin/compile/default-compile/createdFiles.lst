@@ -1,0 +1,4 @@
+com\expressage\entity\User.class
+com\expressage\service\ExpFeignService.class
+com\expressage\utils\ResultBody.class
+com\expressage\utils\ResultEnum.class
